@@ -10,9 +10,7 @@
     }
   },
   "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -36,7 +34,8 @@
   "license": "MIT",
   "sideEffects": false,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "typescript": "^6.0.3"
