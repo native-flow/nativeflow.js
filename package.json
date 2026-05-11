@@ -4,13 +4,16 @@
   "description": "browser execution runtime over websocket + fetch",
   "type": "module",
   "exports": {
-    ".": "./dist/main.js"
+    "import": "./dist/main.js"
   },
   "files": [
     "dist",
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "browser",
     "runtime",
@@ -18,7 +21,18 @@
     "fetch",
     "nativeflow"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/native-flow/nativeflow.js"
+  },
+  "bugs": {
+    "url": "https://github.com/native-flow/nativeflow.js/issues"
+  },
+  "homepage": "https://github.com/native-flow/nativeflow.js",
   "author": "NativeFlow",
-  "license": "BSD-3-Clause",
-  "sideEffects": false
+  "license": "MIT",
+  "sideEffects": false,
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
 }
