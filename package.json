@@ -2,7 +2,6 @@
   "name": "@nativeflow/core",
   "version": "0.0.1",
   "description": "browser execution runtime over websocket + fetch",
-  "main": "./dist/main.js",
   "type": "module",
   "exports": {
     ".": "./dist/main.js"
