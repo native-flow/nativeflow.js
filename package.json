@@ -4,7 +4,10 @@
   "description": "browser execution runtime over websocket + fetch",
   "type": "module",
   "exports": {
-    "import": "./dist/main.js"
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js"
+    }
   },
   "files": [
     "dist",
@@ -32,6 +35,9 @@
   "author": "NativeFlow",
   "license": "MIT",
   "sideEffects": false,
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "typescript": "^6.0.3"
   }
